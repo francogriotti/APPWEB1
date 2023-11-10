@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap">
+    <title>Galería de imágenes</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Subir una imágen</h1>
+        <form id="imageForm">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="imageUrl">URL de la imágen:</label>
+            <input type="url" id="imageUrl" name="imageUrl" required>
+
+            <button type="button" onclick="subirImagen()">Subir Imagen</button>
+        </form>
+
+        <div id="gallery">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
